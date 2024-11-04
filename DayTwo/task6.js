@@ -1,6 +1,4 @@
-function add(a, b) {
-    let result = a + b;
-    console.log("Addition Result:", result);
-}
-
-add(5, 3);
+let num1 = 10;
+let num2 = 5;
+let sum = num1 + num2;
+console.log("Sum:", sum);
