@@ -6,3 +6,5 @@ function checkEvenOdd(num) {
         console.log(`${num} is odd`);
     }
 }
+checkEvenOdd(8);
+checkEvenOdd(9);

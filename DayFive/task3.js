@@ -2,3 +2,4 @@
 const findMax = function(a, b) {
     console.log(`Maximum is: ${a > b ? a : b}`);
 };
+findMax(8,9);
