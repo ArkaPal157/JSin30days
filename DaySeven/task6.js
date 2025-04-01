@@ -8,4 +8,4 @@ const library = {
 };
 
 console.log("Library Name:", library.name);
-library.books.forEach(book => console.log("Book Title:", book.title));
+library.books.forEach(books => console.log("Book Title:", books.title));

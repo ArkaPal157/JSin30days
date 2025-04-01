@@ -2,7 +2,7 @@
 const book = {
     title: "The Alchemist",
     year: 1988,
-    getInfo: function() {
+    getInfo() { //'getInfo: function() {}' short hand syntax version is 'getInfo() {}'
         return `${this.title} was published in ${this.year}`;
     }
 };

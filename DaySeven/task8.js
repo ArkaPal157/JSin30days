@@ -5,6 +5,6 @@ const book = {
     year: 1988
 };
 
-for (let key in book) {
+for (let key in book) { //for in loop is used to iterate over the properties (keys) of an object
     console.log(`${key}: ${book[key]}`);
 }

@@ -10,3 +10,5 @@ const { title, author } = book;
 
 console.log("Title:", title);
 console.log("Author:", author);
+
+//same as array destructuring but does it for object

@@ -9,3 +9,5 @@ const book = {
 };
 
 console.log(book.getDetails());
+
+// `` is used for multiline strings

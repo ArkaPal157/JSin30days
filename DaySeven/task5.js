@@ -8,3 +8,5 @@ const library = {
 };
 
 console.log(library);
+
+//when an object contains another object as a property, it is called a nested object

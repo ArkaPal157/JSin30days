@@ -3,10 +3,11 @@ const book = {
     title: "The Alchemist",
     author: "Paulo Coelho",
     year: 1988,
-    updateYear: function(newYear) {
+    updateYear(newYear) {
         this.year = newYear;
     }
 };
 
 book.updateYear(2023);
 console.log(book);
+

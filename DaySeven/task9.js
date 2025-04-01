@@ -7,3 +7,4 @@ const book = {
 
 console.log("Keys:", Object.keys(book));
 console.log("Values:", Object.values(book));
+//keys are the properties and values are the value of the properties of the object

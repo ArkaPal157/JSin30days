@@ -4,3 +4,7 @@ const [first, second] = numbers;
 
 console.log("First:", first);
 console.log("Second:", second);
+
+/*
+array destructuring allows you to unpack values from an array and assign them to variables
+*/

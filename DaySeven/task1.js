@@ -6,3 +6,5 @@ const book = {
 };
 
 console.log(book);
+
+//title author year are properties of the onject book
