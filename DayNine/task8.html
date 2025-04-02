@@ -1,0 +1,9 @@
+<!-- Task 8: Add and remove a CSS class to/from an HTML element -->
+<style>.highlight { background: yellow; }</style>
+<p id="txt">Hello</p>
+<script>
+    const t = document.getElementById("txt");
+    t.classList.add("highlight");
+    setTimeout(() => t.classList.remove("highlight"), 2000); //removes the highlight after 2sec
+</script>
+
