@@ -3,27 +3,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Event Delegation Example</title>
+  <title>Dynamic Child Event</title>
 </head>
 <body>
 
-  <button id="addItem">Add Item</button>
-  <ul id="task10"></ul>
+  <button id="addBtn">Add Button</button>
+  <div id="container"></div>
+
+  <p id="output"></p>
 
   <script>
-    // Add new item when button is clicked
-    document.getElementById("addItem").addEventListener("click", function() {
-      const li = document.createElement("li");     // create a new <li>
-      li.textContent = "New Item";                 // give it some text
-      document.getElementById("task10").appendChild(li); // add it to the <ul>
+    const container = document.getElementById("container");
+
+    container.addEventListener("click", function(event) { // Listen for clicks on any button inside the container (including future ones)
+      if (event.target.tagName === "BUTTON") {
+        document.getElementById("output").textContent = "Clicked: " + event.target.textContent;
+      }
     });
 
-    // Use event delegation to detect clicks on list items
-    document.getElementById("task10").addEventListener("click", function(event) {
-      console.log("Clicked:", event.target.textContent); // log clicked item's text
+    document.getElementById("addBtn").addEventListener("click", function() { // Add new buttons dynamically
+      const newBtn = document.createElement("button");
+      newBtn.textContent = "Button " + (container.children.length + 1);
+      container.appendChild(newBtn);
     });
   </script>
 
 </body>
 </html>
+
 

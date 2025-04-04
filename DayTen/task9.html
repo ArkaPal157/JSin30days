@@ -1,2 +1,30 @@
 <!-- Task 9: Add a click event listener to a list that logs the text content of the clicked list item using event delegation. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Click Example</title>
+</head>
+<body>
+
+  <ul id="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <p id="output"></p>
+
+  <script>
+    document.getElementById("myList").addEventListener("click", function(event) {
+      if (event.target.tagName === "LI") {
+        document.getElementById("output").textContent = "You clicked: " + event.target.textContent;
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
 

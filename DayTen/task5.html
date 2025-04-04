@@ -1,2 +1,18 @@
 <!-- Task 5: Add a keydown event listener to an input field that logs the pressed key to the console. -->
+<input id="keyInput" placeholder="Press a key">
+<p id="keyOutput"></p>
+
+<script>
+const input = document.getElementById("keyInput");
+const output = document.getElementById("keyOutput");
+
+input.addEventListener("keydown", function(event) {
+    output.textContent = "Key pressed: " + event.key; // Show key when it's pressed
+});
+
+input.addEventListener("keyup", function() {
+    output.textContent = ""; // Clear output when key is released
+});
+</script>
+
 

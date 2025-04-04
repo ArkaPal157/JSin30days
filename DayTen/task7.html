@@ -1,2 +1,33 @@
 <!-- Task 7: Add a submit event listener to a form that prevents default submission and logs form data to the console. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Output Display</title>
+</head>
+<body>
+
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Enter your name">
+    <input type="email" name="email" placeholder="Enter your email">
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="output"></p> <!-- This will show the result -->
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent page reload
+
+      const name = this.username.value;
+      const email = this.email.value;
+
+      const output = document.getElementById("output");
+      output.textContent = `Name: ${name}, Email: ${email}`;
+    });
+  </script>
+
+</body>
+</html>
+
 
