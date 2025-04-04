@@ -1,0 +1,29 @@
+<!-- Task 10: Add an event listener to a parent element that listens to events from dynamically added child elements. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Delegation Example</title>
+</head>
+<body>
+
+  <button id="addItem">Add Item</button>
+  <ul id="task10"></ul>
+
+  <script>
+    // Add new item when button is clicked
+    document.getElementById("addItem").addEventListener("click", function() {
+      const li = document.createElement("li");     // create a new <li>
+      li.textContent = "New Item";                 // give it some text
+      document.getElementById("task10").appendChild(li); // add it to the <ul>
+    });
+
+    // Use event delegation to detect clicks on list items
+    document.getElementById("task10").addEventListener("click", function(event) {
+      console.log("Clicked:", event.target.textContent); // log clicked item's text
+    });
+  </script>
+
+</body>
+</html>
+

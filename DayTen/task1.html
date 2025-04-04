@@ -1,0 +1,22 @@
+<!-- Task 1: Add a click event listener to a button that changes the text content of a paragraph. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Event Example</title>
+</head>
+<body>
+
+  <p id="task1">Original</p> <!-- Paragraph text to be changed -->
+  <button id="btn1">Click Me</button> <!-- Button to click -->
+
+  <script>
+    // When the button is clicked
+    document.getElementById("btn1").addEventListener("click", function() {
+      // Change the text of the paragraph
+      document.getElementById("task1").textContent = "Changed";
+    });
+  </script>
+
+</
+

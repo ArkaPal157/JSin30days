@@ -1,9 +1,23 @@
 <!-- Task 9: Add a click event listener to a button that changes text content -->
-<button id="btn">Click</button>
-<p id="txt">Before</p>
-<script>
-    document.getElementById("btn").onclick = () => 
-        document.getElementById("txt").textContent = "After"; //click event listener uses a click from user through a button
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Event Example</title>
+</head>
+<body>
+
+    <button id="btn">Click</button>
+    <p id="txt">Before</p>
+
+    <script>
+        document.getElementById("btn").onclick = () => {
+            document.getElementById("txt").textContent = "After";
+        };
+    </script>
+
+</body>
+</html>
+
 
 

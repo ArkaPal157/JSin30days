@@ -1,8 +1,23 @@
 <!-- Task 10: Add a mouseover event listener to change border color -->
-<div id="box" style="width:100px; height:50px; border:2px solid black;"></div>
-<script>
-    document.getElementById("box").onmouseover = () => 
-        document.getElementById("box").style.borderColor = "red"; //mouseover event listner uses the hover of mouse from user
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouseover Example</title>
+</head>
+<body>
+
+    <div id="box" style="width:100px; height:50px; border:2px solid black;"></div>
+
+    <script>
+        // When the user hovers over the box, change the border color to red
+        document.getElementById("box").onmouseover = () => {
+            document.getElementById("box").style.borderColor = "red";
+        };
+    </script>
+
+</body>
+</html>
+
 
 

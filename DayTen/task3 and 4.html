@@ -1,0 +1,37 @@
+<!-- Task 3 and 4: Add a mouseover and mouseout event listener to an element that changes its background color. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Hover Example</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box">Hover Me</div>
+
+  <script>
+    let box = document.getElementById("box");
+    
+    // When mouse enters the box
+    box.onmouseover = () => {
+      box.style.background = "yellow";
+    };
+
+    // When mouse leaves the box
+    box.onmouseout = () => {
+      box.style.background = "";
+    };
+  </script>
+
+</body>
+</html>
+
