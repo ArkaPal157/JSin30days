@@ -3,11 +3,11 @@
 // Log the matches.
 
 function matchAllDigits(text) {
-  // Create a regular expression to match all digits
+  // Creates a regular expression to match all digits
   const regex = /\d/g;
-  // Use match() to find all matches
+  // Uses match() to find all matches
   const matches = text.match(regex);
-  // Log the matches
+  // Logs the matches
   console.log("Digits:", matches);
 }
 

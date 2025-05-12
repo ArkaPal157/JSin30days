@@ -3,11 +3,11 @@
 // Log whether the URL is valid.
 
 function validateURL(url) {
-  // Create a regular expression to validate the URL
+  // Creates a regular expression to validate the URL
   const regex = /^(https?:\/\/)?([\w.-]+)\.([a-z]{2,})(\/\S*)?$/i;
-  // Test the URL against the regex
+  // Tests the URL against the regex
   const isValid = regex.test(url);
-  // Log the result
+  // Logs the result
   console.log("URL is valid:", isValid);
 }
 

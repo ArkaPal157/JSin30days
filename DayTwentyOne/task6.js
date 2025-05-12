@@ -3,9 +3,9 @@
 // Log the captures.
 
 function captureEmailComponents(email) {
-  // Create a regular expression with capturing groups for username and domain
+  // Creates a regular expression with capturing groups for username and domain
   const regex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
-  // Use match() to capture the components
+  // Usses match() to capture the components
   const matches = email.match(regex);
   if (matches) {
     const [_, username, domain] = matches;

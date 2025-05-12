@@ -3,11 +3,11 @@
 // Log the matches.
 
 function matchCapitalizedWords(text) {
-  // Create a regular expression to match words starting with a capital letter
+  // Creates a regular expression to match words starting with a capital letter
   const regex = /\b[A-Z][a-zA-Z]*\b/g;
-  // Use match() to find all matches
+  // Uses match() to find all matches
   const matches = text.match(regex);
-  // Log the matches
+  // Logs the matches
   console.log("Capitalized Words:", matches);
 }
 

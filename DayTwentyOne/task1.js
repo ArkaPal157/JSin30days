@@ -3,11 +3,11 @@
 // Log the matches.
 
 function matchJavaScriptOccurrences(text) {
-  // Create a regular expression to match all occurrences of "JavaScript"
+  // Creates a regular expression to match all occurrences of "JavaScript"
   const regex = /JavaScript/g;
-  // Use match() to find all matches
+  // Uses match() to find all matches
   const matches = text.match(regex);
-  // Log the matches
+  // Logs the matches
   console.log("Matches:", matches);
 }
 

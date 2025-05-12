@@ -3,11 +3,11 @@
 // Log whether the password is valid.
 
 function validatePassword(password) {
-  // Create a regular expression to validate the password
+  // Creates a regular expression to validate the password
   const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/;
-  // Test the password against the regex
+  // Tests the password against the regex
   const isValid = regex.test(password);
-  // Log the result
+  // Logs the result
   console.log("Password is valid:", isValid);
 }
 

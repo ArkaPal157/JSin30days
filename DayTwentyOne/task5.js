@@ -3,9 +3,9 @@
 // Log the captures.
 
 function capturePhoneNumberComponents(phoneNumber) {
-  // Create a regular expression with capturing groups for area code, central office code, and line number
+  // Creates a regular expression with capturing groups for area code, central office code, and line number
   const regex = /\((\d{3})\)\s(\d{3})-(\d{4})/;
-  // Use match() to capture the components
+  // Uses match() to capture the components
   const matches = phoneNumber.match(regex);
   if (matches) {
     const [_, areaCode, centralOfficeCode, lineNumber] = matches;

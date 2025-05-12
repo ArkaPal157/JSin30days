@@ -3,11 +3,11 @@
 // Log the matches.
 
 function matchDigitSequences(text) {
-  // Create a regular expression to match sequences of one or more digits
+  // Creates a regular expression to match sequences of one or more digits
   const regex = /\d+/g;
-  // Use match() to find all matches
+  // Uses match() to find all matches
   const matches = text.match(regex);
-  // Log the matches
+  // Logs the matches
   console.log("Digit Sequences:", matches);
 }
 
