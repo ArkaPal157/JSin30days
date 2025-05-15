@@ -1,0 +1,28 @@
+<!-- 
+Task 6: MutationObserver as Micro-task
+Use MutationObserver to log a message when the DOM changes.
+Trigger a DOM change using JavaScript and observe its position in the event loop 
+relative to Promises and setTimeout.
+-->
+
+<div id="target">Original</div>
+
+<script>
+const target = document.getElementById('target');
+
+const observer = new MutationObserver(() => {
+  console.log('MutationObserver callback');
+});
+
+observer.observe(target, { childList: true });
+
+setTimeout(() => {
+  console.log('setTimeout callback');
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log('Promise callback');
+});
+
+target.textContent = 'Updated';
+</script>
